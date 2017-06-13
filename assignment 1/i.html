@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>the diet checher</title>
+		<link rel="stylesheet" href="i.css">
+		<script src="./angular.min.js"></script>
+		<script src="./i.js"></script>
+	</head>
+	<body ng-app="LunchCheck">
+		<div ng-controller="LunchCheckController" ng-style="customStyle.style">
+			<section><h1>Assignment 1 Solution</h1></section>
+			<input type="text" ng-model="name">
+			<button ng-click="checkeri();">Check If Too Much</button>
+			<p>{{curl}}</p>
+		</div>
+	</body>
+</html>
+
