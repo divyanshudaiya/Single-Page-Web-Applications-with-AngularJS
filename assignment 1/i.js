@@ -23,7 +23,7 @@
 			if (res.length>3){
 				return "Too much!";
 			}
-			else if (res.length==0) {
+			else if (foe==="") {
 				return "Please enter data first";
 			}
 			else{
