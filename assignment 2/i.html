@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>the diet checher</title>
+		<link rel="stylesheet" href="i.css">
+		<script src="./angular.min.js"></script>
+		<script src="./i.js"></script>
+	</head>
+	<body ng-app="ShoppingList">
+		<div class = 'outer'  >
+			<section><h1>Assignment 2 Solution</h1></section>
+			<div class='inner-left' ng-controller="ShoppingListController as buy" ng-style="customStyle.style">
+				<h1>To Buy</h1>
+				<p ng-show="buy.toBuy.length == 0">Everything is bought!</p>
+				
+				<ol>
+					<li ng-repeat="item in buy.toBuy">
+						Buy {{item.value}} {{item.item}}(s)   
+						<button ng-click="buy.itsbought($index);">Bought</button>
+					</li>
+				</ol>
+			</div>
+			<div class='inner-right' ng-controller="ShoppingListController1 as Bought">
+				<h1>Already Bought</h1>
+				<p ng-show="Bought.bought.length == 0">Nothing bought yet</p>
+				<ol>
+					<li ng-repeat="item in Bought.bought">
+						Bought {{item.value}} {{item.item}}(s)   
+					</li>
+				</ol>
+			</div>
+			
+		</div>
+	</body>
+</html>
+
