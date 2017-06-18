@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+  <head>
+		<title>the diet checher</title>
+		<link rel="stylesheet" href="style.css">
+
+		<script src="./angular.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+	
+  	<script src="./menuapp.module.js"></script>
+    <script src="./data.module.js"></script>
+    <script src="./menudata.service.js"></script>
+    <script src="./router.js"></script>
+    <script src="./categories.component.js"></script>
+    <script src="./items.component.js"></script>
+
+ </head>
+  <body ng-app='MenuApp'>
+      <h1>Assignemnt 4 solution</h1>
+      <div><a ui-sref="home">Home page</a>
+      </div>
+      <div><ui-view><a ui-sref="categorie">CATEGORIES</a></ui-view>
+      </div>
+  </body>
+</html>
