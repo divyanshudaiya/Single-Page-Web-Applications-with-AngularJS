@@ -53,7 +53,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 			}
 		)
 		.state('categorie',{
-				url:"/categories",
+				url:"/signin",
 				template: 
 				'      <div class="container" ><fieldset><p style="text-align:center;margin-bottom:10px;font-size:2em;">Sign in form</p>'+
 				'      <form class="form-horizontal" name=\'regForm\' novalidate>'+
@@ -127,10 +127,10 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 				}
 		 )
 		.state('itemi',{
-				url:"/items",
+				url:"/info",
 								
 				template:'<div class="container" style="padding-left:100px; padding-right:100px;font-size:2em; content-align:center; text-align:center;"><div ng-if="catList.total">'+
-				'<br><img src="images/menu/{{catList.value.category_short_name}}/{{catList.value.category_short_name}}.jpg" />'+
+				'<br><img src="images/menu/{{catList.value.category_short_name}}/{{catList.value.category_short_name}}.jpg" alt="LOADING IMAGE :)"/>'+
 				'<br><br><br><b>UserName</b> : {{ catList.user.username }} {{ catList.user.short_name }}<br>'+
 				'<b>Email</b>: {{ catList.user.email }}<br>'+
 				'<b>Favourite dish short-name</b>: {{ catList.value.short_name }}<br>'+
