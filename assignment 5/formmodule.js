@@ -119,7 +119,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 				''+
 				'        <div  class="col-sm-offset-2 col-sm-10"><button '+
 				'          ng-disabled="regForm.$invalid || catList.valid"'+
-				'          ng-click="catList.reassign() " style="font-size:1.5em;" class="btn btn-default">Submit</button><p ng-if="catList.total">See <a ui-sref="itemi" >info</a><p style="font-size:1.5em;font-weight:bold;color:green;">SIGN UP SUCCESSFULL</p></p></div></form></fieldset></div>'
+				'          ng-click="catList.reassign() " style="font-size:1.5em;" class="btn btn-default">Submit</button><p ng-if="catList.total">See <a ui-sref="itemi" >info</a></p></div></form></fieldset></div>'
 				
 				
 				,
